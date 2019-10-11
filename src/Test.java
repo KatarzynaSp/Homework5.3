@@ -5,14 +5,14 @@ class Test {
         Point point3 = new Point(3, 0.7);
 
         Segment segment = new Segment(point1, point2);
-        segment.getLenght();
-        System.out.println(segment.lenght);
+        double l1 = segment.getLenght();
+        System.out.println(l1);
 
         Triangle triangle = new Triangle();
-        triangle.getLenght2(segment);
-        System.out.println(segment.lenght);
-
-        boolean a = triangle.triangle(point1, point2, point3);
+        double a = triangle.getLenght2(segment);
         System.out.println(a);
+
+        boolean isTriangle = triangle.triangle(point1, point2, point3);
+        System.out.println(isTriangle);
     }
 }

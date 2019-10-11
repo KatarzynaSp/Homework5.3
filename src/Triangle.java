@@ -1,13 +1,15 @@
 class Triangle {
-    double tolerance = 0.01;
 
     double getLenght2(Segment segment) {
-        return Math.sqrt((segment.pointA.x - segment.pointB.x) * (segment.pointA.x - segment.pointB.x)
-                + (segment.pointA.y - segment.pointB.y) * (segment.pointA.y - segment.pointB.y));
+        return Math.sqrt((segment.getPointA().getX() - segment.getPointB().getX())
+                * (segment.getPointA().getX() - segment.getPointB().getX())
+                + (segment.getPointA().getY() - segment.getPointB().getY())
+                * (segment.getPointA().getY() - segment.getPointB().getY()));
     }
 
     boolean triangle(Point point1, Point point2, Point point3) {
-        if (Math.abs((point1.y - point2.y) * (point3.x - point2.x) - (point3.y - point2.y) * (point1.x - point2.x)) < tolerance) {
+        if ((point1.getY() - point2.getY()) * (point3.getX() - point2.getX())
+                - (point3.getY() - point2.getY()) * (point1.getX() - point2.getX()) == 0) {
             return false;
         } else {
             return true;
