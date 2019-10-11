@@ -2,7 +2,6 @@ class Segment {
 
     private Point pointA;
     private Point pointB;
-    private double lenght;
 
     public Point getPointA() {
         return pointA;
@@ -18,10 +17,6 @@ class Segment {
 
     public void setPointB(Point pointB) {
         this.pointB = pointB;
-    }
-
-    public void setLenght(double lenght) {
-        this.lenght = lenght;
     }
 
     Segment(Point A, Point B) {
