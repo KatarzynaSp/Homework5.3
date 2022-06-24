@@ -1,0 +1,8 @@
+Treść zadania
+Zdefiniuj klasę reprezentującą punkt na płaszczyźnie. Zdefiniuj 4 metody, których zadaniem jest sprawdzenie, czy punkt leży w danej ćwiartce układu współrzędnych. 
+Każda z metod powinna zwracać wartość logiczną i odpowiada za poszczególną ćwiartkę.
+Następnie zdefiniuj 3 kolejne metody, których zadaniem będzie zwrócenie odpowiedzi na pytania, czy punkt leży na osi x, osi y lub w środku układu współrzędnych.
+Zdefiniuj klasę reprezentującą odcinek wyznaczony przez dwa punkty. W tej samej klasie stwórz metodę, którą będzie obliczała i zwracała długość odcinka.
+Powyższe klasy powinny spełniać standard JavaBeans.
+Następnie zdefiniuj podobną metodę, ale w osobnej klasie. Metoda powinna przyjmować odcinek jako parametr, a następnie obliczyć i zwrócić jego długość. 
+W tej samej klasie dodaj też metodę, która sprawdza, czy z 3 punktów przekazanych jako argumenty można zbudować trójkąt.
